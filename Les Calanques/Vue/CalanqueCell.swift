@@ -32,9 +32,12 @@ class CalanqueCell: UITableViewCell {
         self.calanque = calanque
         containerView.layer.cornerRadius = 20
         containerView.backgroundColor  = UIColor.lightGray
-        nomLabel.text = self.calanque.nom
-        calanqueIV.image = self.calanque.image
         
+        //que l'on passe par la variable de classe (self) ou par le parametre de setupCell, c'est pareil...
+        nomLabel.text = self.calanque.nom
+        //nomLabel.text = calanque.nom
+        calanqueIV.image = self.calanque.image
+        //calanqueIV.image = calanque.image
     }
     
 }

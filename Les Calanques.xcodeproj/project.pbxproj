@@ -19,6 +19,7 @@
 		88741FB721E9FA5A0015FA5E /* CalanqueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88741FB621E9FA590015FA5E /* CalanqueCell.swift */; };
 		88741FB921EA02D60015FA5E /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88741FB821EA02D60015FA5E /* ImageRonde.swift */; };
 		88741FBB21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88741FBA21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift */; };
+		88741FBD21EBB76A0015FA5E /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88741FBC21EBB76A0015FA5E /* DetailController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		88741FB621E9FA590015FA5E /* CalanqueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCell.swift; sourceTree = "<group>"; };
 		88741FB821EA02D60015FA5E /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
 		88741FBA21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternativeTableViewCell.swift; sourceTree = "<group>"; };
+		88741FBC21EBB76A0015FA5E /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				88741FB021E8B42C0015FA5E /* Controller Avec Tableview.swift */,
 				88741FB221E8B4430015FA5E /* Controller Avec Carte.swift */,
 				88741FB421E8B47B0015FA5E /* TableView Integree Controller.swift */,
+				88741FBC21EBB76A0015FA5E /* DetailController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				88741FAF21E8B1640015FA5E /* CalanqueCollection.swift in Sources */,
 				88741FB521E8B47B0015FA5E /* TableView Integree Controller.swift in Sources */,
 				88741FB921EA02D60015FA5E /* ImageRonde.swift in Sources */,
+				88741FBD21EBB76A0015FA5E /* DetailController.swift in Sources */,
 				88741FAD21E8AEDE0015FA5E /* Calanques.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
