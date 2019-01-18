@@ -8,7 +8,13 @@
 
 import UIKit
 
+let segueID = "Detail"
+
 class TableView_Integree_Controller: UITableViewController {
+    
+  
+    //bien adapté quand la view ne comporte qu'une tableView
+    //la variable tableView est definie dans le UITableViewController
     
     var calanques: [Calanque] = []
     var cellID = "CalanqueCell"
@@ -17,7 +23,7 @@ class TableView_Integree_Controller: UITableViewController {
         super.viewDidLoad()
         
         calanques = CalanqueCollection().all()
-        tableView.backgroundColor = UIColor.red
+        tableView.backgroundColor = UIColor.red  //inutile?
         let bg = UIImageView(frame: view.bounds)
         bg.image = calanques[0].image
         bg.contentMode = .scaleAspectFill
@@ -43,6 +49,8 @@ class TableView_Integree_Controller: UITableViewController {
             cell.setupCell(calanques[indexPath.row])
             return cell
         } else {
+            //dans quel cas passe-t-on la? Jamais?
+            
             let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
             let calanque = calanques[indexPath.row]
             cell.textLabel?.text = calanque.nom
@@ -56,6 +64,38 @@ class TableView_Integree_Controller: UITableViewController {
         
     }
 
-   
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueID, sender: calanques[indexPath.row])
+    }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID {
+            if let vc = segue.destination as? DetailController {
+                vc.calanqueRecue = sender as? Calanque
+            }
+            
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        
+        //deux editingStyle possibles: .delete ou .insert
+        
+        if editingStyle == .delete {
+            
+            //cet appel permet d'activer le glissement de la ligne pour effacer
+             calanques.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+           
+        } else if editingStyle == .insert {
+            print("Ajouter ici un element")
+        }
+    }
+    
+    @IBAction func reloadAction(_ sender: Any) {
+        calanques = CalanqueCollection().all()
+        tableView.reloadData()
+    }
+    
+    
 }

@@ -20,6 +20,9 @@
 		88741FB921EA02D60015FA5E /* ImageRonde.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88741FB821EA02D60015FA5E /* ImageRonde.swift */; };
 		88741FBB21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88741FBA21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift */; };
 		88741FBD21EBB76A0015FA5E /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88741FBC21EBB76A0015FA5E /* DetailController.swift */; };
+		88A2BC5C21EDF19200689391 /* BoutonArondi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2BC5B21EDF19200689391 /* BoutonArondi.swift */; };
+		88A2BC5E21EE22A300689391 /* MonAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2BC5D21EE22A300689391 /* MonAnnotation.swift */; };
+		88A2BC6021EE29A900689391 /* MonAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88A2BC5F21EE29A900689391 /* MonAnnotationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +41,9 @@
 		88741FB821EA02D60015FA5E /* ImageRonde.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRonde.swift; sourceTree = "<group>"; };
 		88741FBA21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalanqueCellAlternativeTableViewCell.swift; sourceTree = "<group>"; };
 		88741FBC21EBB76A0015FA5E /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		88A2BC5B21EDF19200689391 /* BoutonArondi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoutonArondi.swift; sourceTree = "<group>"; };
+		88A2BC5D21EE22A300689391 /* MonAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotation.swift; sourceTree = "<group>"; };
+		88A2BC5F21EE29A900689391 /* MonAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonAnnotationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +93,7 @@
 			children = (
 				88741FAC21E8AEDE0015FA5E /* Calanques.swift */,
 				88741FAE21E8B1640015FA5E /* CalanqueCollection.swift */,
+				88A2BC5D21EE22A300689391 /* MonAnnotation.swift */,
 			);
 			path = Modele;
 			sourceTree = "<group>";
@@ -97,6 +104,8 @@
 				88741FB621E9FA590015FA5E /* CalanqueCell.swift */,
 				88741FB821EA02D60015FA5E /* ImageRonde.swift */,
 				88741FBA21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift */,
+				88A2BC5B21EDF19200689391 /* BoutonArondi.swift */,
+				88A2BC5F21EE29A900689391 /* MonAnnotationView.swift */,
 			);
 			path = Vue;
 			sourceTree = "<group>";
@@ -185,7 +194,9 @@
 			files = (
 				88741FB321E8B4430015FA5E /* Controller Avec Carte.swift in Sources */,
 				88741FB121E8B42C0015FA5E /* Controller Avec Tableview.swift in Sources */,
+				88A2BC6021EE29A900689391 /* MonAnnotationView.swift in Sources */,
 				88741FBB21EA1FA40015FA5E /* CalanqueCellAlternativeTableViewCell.swift in Sources */,
+				88A2BC5E21EE22A300689391 /* MonAnnotation.swift in Sources */,
 				88741FB721E9FA5A0015FA5E /* CalanqueCell.swift in Sources */,
 				88741F9621E89C280015FA5E /* AppDelegate.swift in Sources */,
 				88741FAF21E8B1640015FA5E /* CalanqueCollection.swift in Sources */,
@@ -193,6 +204,7 @@
 				88741FB921EA02D60015FA5E /* ImageRonde.swift in Sources */,
 				88741FBD21EBB76A0015FA5E /* DetailController.swift in Sources */,
 				88741FAD21E8AEDE0015FA5E /* Calanques.swift in Sources */,
+				88A2BC5C21EDF19200689391 /* BoutonArondi.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

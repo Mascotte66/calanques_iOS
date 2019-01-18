@@ -21,7 +21,7 @@ class Controller_Avec_Tableview: UIViewController, UITableViewDelegate, UITableV
         tableView.dataSource = self
         callanques = CalanqueCollection().all()
 
-        // Do any additional setup after loading the view.
+        
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -43,6 +43,30 @@ class Controller_Avec_Tableview: UIViewController, UITableViewDelegate, UITableV
             return 200
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: segueID, sender: callanques[indexPath.row])
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == segueID, let vc = segue.destination as? DetailController {
+            vc.calanqueRecue = sender as? Calanque
+        }
+    }
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            callanques.remove(at: indexPath.row)
+            tableView.deleteRows(at: [indexPath], with: .fade)
+            
+        } else if editingStyle == .insert {
+            print("Ajouter ici un element")
+        }
+    }
+    
+    
+    @IBAction func reloadData(_ sender: Any) {
+        callanques = CalanqueCollection().all()
+        tableView.reloadData()
+    }
     
     /*
     // MARK: - Navigation
