@@ -21,6 +21,7 @@ class Controller_Avec_Carte: UIViewController , MKMapViewDelegate, CLLocationMan
         super.viewDidLoad()
         mapView.delegate = self
         mapView.showsUserLocation = true
+        
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
