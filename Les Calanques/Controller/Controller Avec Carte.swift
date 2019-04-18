@@ -25,7 +25,7 @@ class Controller_Avec_Carte: UIViewController , MKMapViewDelegate, CLLocationMan
         locationManager.delegate = self
         locationManager.requestAlwaysAuthorization()
         locationManager.startUpdatingLocation()
-        addAnnotations()
+        addAnnotations() // ajout des anotations pour toutes les calanques
         
         //pour le notification center
         NotificationCenter.default.addObserver(self, selector: #selector(notifDetail), name: Notification.Name("detail"), object: nil)
